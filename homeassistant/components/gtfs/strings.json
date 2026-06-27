@@ -1,0 +1,35 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_service%]"
+    },
+    "error": {
+      "invalid_path": "The GTFS data file or folder was not found in the gtfs folder of your configuration directory."
+    },
+    "step": {
+      "user": {
+        "data": {
+          "data": "Data file or folder",
+          "destination": "Destination stop ID",
+          "include_tomorrow": "Include tomorrow",
+          "offset": "Offset",
+          "origin": "Origin stop ID"
+        },
+        "data_description": {
+          "data": "The GTFS data file or folder, located in the gtfs folder of your configuration directory.",
+          "destination": "The stop ID of the station to arrive at.",
+          "include_tomorrow": "Also include departures scheduled for tomorrow.",
+          "offset": "Look for departures this many minutes into the future.",
+          "origin": "The stop ID of the station to depart from."
+        },
+        "title": "Set up GTFS"
+      }
+    }
+  },
+  "issues": {
+    "deprecated_yaml_import_issue": {
+      "description": "Configuring GTFS using YAML is being removed.\n\nWhile importing your configuration, the GTFS data file or folder could not be found. Restart Home Assistant after fixing the path, or remove the YAML configuration and set the integration up via the UI.",
+      "title": "The GTFS YAML configuration could not be imported"
+    }
+  }
+}

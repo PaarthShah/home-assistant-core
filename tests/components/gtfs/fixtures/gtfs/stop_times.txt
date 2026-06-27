@@ -1,0 +1,3 @@
+trip_id,arrival_time,departure_time,stop_id,stop_sequence,pickup_type,drop_off_type,timepoint
+T1,08:30:00,08:30:00,O,1,0,0,1
+T1,09:00:00,09:00:00,D,2,0,0,1

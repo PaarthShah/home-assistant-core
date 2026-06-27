@@ -2,9 +2,11 @@
   "domain": "gtfs",
   "name": "General Transit Feed Specification (GTFS)",
   "codeowners": [],
+  "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/gtfs",
+  "integration_type": "service",
   "iot_class": "local_polling",
   "loggers": ["pygtfs"],
-  "quality_scale": "legacy",
+  "quality_scale": "bronze",
   "requirements": ["pygtfs==0.1.11"]
 }

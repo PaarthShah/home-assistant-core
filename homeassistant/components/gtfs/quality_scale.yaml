@@ -1,0 +1,92 @@
+rules:
+  # Bronze
+  action-setup:
+    status: exempt
+    comment: The integration does not register any service actions.
+  appropriate-polling: done
+  brands: done
+  common-modules: done
+  config-flow-test-coverage: done
+  config-flow: done
+  dependency-transparency: done
+  docs-actions:
+    status: exempt
+    comment: The integration does not register any service actions.
+  docs-conditions:
+    status: exempt
+    comment: The integration does not register any conditions.
+  docs-high-level-description: done
+  docs-installation-instructions: done
+  docs-removal-instructions: done
+  docs-triggers:
+    status: exempt
+    comment: The integration does not register any triggers.
+  entity-event-setup: done
+  entity-unique-id: done
+  has-entity-name: done
+  runtime-data: done
+  test-before-configure: done
+  test-before-setup: done
+  unique-config-entry: done
+
+  # Silver
+  action-exceptions:
+    status: exempt
+    comment: The integration does not register any service actions.
+  config-entry-unloading: done
+  docs-configuration-parameters: todo
+  docs-installation-parameters: todo
+  entity-unavailable: done
+  integration-owner: todo
+  log-when-unavailable: done
+  parallel-updates: done
+  reauthentication-flow:
+    status: exempt
+    comment: The GTFS feed is a local data file and requires no authentication.
+  test-coverage: todo
+
+  # Gold
+  devices: todo
+  diagnostics: todo
+  discovery-update-info:
+    status: exempt
+    comment: GTFS feeds are local files and are not discoverable on the network.
+  discovery:
+    status: exempt
+    comment: GTFS feeds are local files and are not discoverable on the network.
+  docs-data-update: todo
+  docs-examples: todo
+  docs-known-limitations: todo
+  docs-supported-devices: todo
+  docs-supported-functions: todo
+  docs-troubleshooting: todo
+  docs-use-cases: todo
+  dynamic-devices:
+    status: exempt
+    comment: Each config entry represents a single origin/destination pair.
+  entity-category: todo
+  entity-device-class: done
+  entity-disabled-by-default:
+    status: exempt
+    comment: The integration provides a single primary sensor per entry.
+  entity-translations:
+    status: exempt
+    comment: The sensor uses the device name as its name (has-entity-name).
+  exception-translations: todo
+  icon-translations: todo
+  reconfiguration-flow: todo
+  repair-issues:
+    status: exempt
+    comment: The only repair issue is the YAML deprecation, which is not fixable.
+  stale-devices:
+    status: exempt
+    comment: Each config entry represents a single origin/destination pair.
+
+  # Platinum
+  async-dependency:
+    status: exempt
+    comment: pygtfs is a synchronous library; queries run in the executor.
+  inject-websession:
+    status: exempt
+    comment: The integration reads a local data file and makes no HTTP requests.
+  strict-typing: todo
